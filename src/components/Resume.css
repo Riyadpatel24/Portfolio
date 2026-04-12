@@ -1,0 +1,112 @@
+/* =============================================
+   Resume.css — only NEW styles needed.
+   All cards/rows/pills reuse index.css classes.
+   ============================================= */
+
+/* Download button — sits inside .section-label */
+.resume-dl-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border: 1px solid var(--green-border);
+  border-radius: 3px;
+  background: var(--green-bg);
+  color: var(--green);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.15s, border-color 0.15s, transform 0.15s;
+  cursor: none;
+  flex-shrink: 0;
+}
+.resume-dl-btn:hover {
+  background: rgba(34,197,94,0.15);
+  border-color: var(--green);
+  transform: translateY(-1px);
+}
+
+/* Tab bar */
+.resume-tabs {
+  display: flex;
+  gap: 1px;
+  margin-bottom: 1.5rem;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.resume-tab {
+  padding: 9px 20px;
+  background: var(--surface);
+  border: none;
+  color: var(--text3);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: none;
+  transition: background 0.15s, color 0.15s;
+}
+.resume-tab:hover {
+  background: var(--surface2);
+  color: var(--text2);
+}
+.resume-tab.active {
+  background: var(--surface2);
+  color: var(--green);
+}
+
+/* Animate tab content on switch */
+.resume-content {
+  animation: fadeIn 0.25s ease both;
+}
+
+/* Bullet list inside project cards */
+.resume-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.resume-bullets li {
+  font-size: 13px;
+  color: var(--text2);
+  line-height: 1.7;
+  padding-left: 18px;
+  position: relative;
+}
+.resume-bullets li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--green);
+  font-size: 11px;
+  top: 2px;
+}
+
+/* Education row with coursework tags below */
+.edu-row--tall {
+  align-items: start;
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+}
+.edu-coursework {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .resume-tabs { width: 100%; }
+  .resume-tab { flex: 1; text-align: center; padding: 9px 10px; font-size: 10px; }
+}
