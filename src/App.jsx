@@ -44,7 +44,7 @@ const LANGUAGES = [
 ]
 
 const CONTACT_ROWS = [
-  {label:'Email',    val:'riyadpatel24@gmail.com', href:'mailto:riyadpatel24@gmail.com'},
+  {label:'Email',    val:'rdp2245@gmail.com', href:'mailto:rdp2245.com'},
   {label:'Phone',    val:'+91 9510177953',          href:'tel:+919510177953'},
   {label:'LinkedIn', val:'riya-patel-b00ab42bb',   href:'https://linkedin.com/in/riya-patel-b00ab42bb', blank:true},
   {label:'GitHub',   val:'Riyadpatel24',            href:'https://github.com/Riyadpatel24', blank:true},
@@ -256,7 +256,7 @@ function ContactForm() {
     e.preventDefault()
     const sub = encodeURIComponent(`Portfolio enquiry from ${f.name}`)
     const body = encodeURIComponent(`Name: ${f.name}\nEmail: ${f.email}\n\nMessage:\n${f.message}`)
-    window.location.href = `mailto:riyadpatel24@gmail.com?subject=${sub}&body=${body}`
+    window.location.href = `mailto:rdp2245@gmail.com?subject=${sub}&body=${body}`
     setSent(true); setTimeout(()=>setSent(false),3000)
   }
   return (
@@ -435,7 +435,7 @@ export default function App() {
 
       {/* FOOTER */}
       <footer>
-        <span className="footer-copy">© 2025 Riya Patel — <a href="mailto:riyadpatel24@gmail.com">riyadpatel24@gmail.com</a></span>
+        <span className="footer-copy">© 2025 Riya Patel — <a href="mailto:rdp2245@gmail.com">rdp2245@gmail.com</a></span>
         <div className="footer-links">
           <a href="https://github.com/Riyadpatel24" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://linkedin.com/in/riya-patel-b00ab42bb" target="_blank" rel="noopener noreferrer">LinkedIn</a>
