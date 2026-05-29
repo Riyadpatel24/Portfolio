@@ -1,16 +1,161 @@
-# React + Vite
+# 🌐 Riya Patel — Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern developer portfolio built to showcase my software engineering projects, technical skills, certifications, and learning journey.
 
-Currently, two official plugins are available:
+🔗 Live Website: https://riyadpatel24.github.io/Portfolio/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## About
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+I'm a B.Tech Computer Science student focused on backend engineering, systems design, and distributed systems.
 
-## Expanding the ESLint configuration
+This portfolio serves as a central hub for my projects, GitHub repositories, resume, certifications, and professional profile.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Features
+
+- Responsive design for desktop and mobile
+- Dark / Light theme toggle
+- Interactive animated background
+- Custom cursor interactions
+- Project showcase section
+- Skills and education timeline
+- Contact form integration
+- Resume viewing support
+- GitHub, LinkedIn, and LeetCode integration
+
+---
+
+## Tech Stack
+
+### Frontend
+- React
+- JavaScript (ES6+)
+- Vite
+- CSS3
+
+### Development Tools
+- Git
+- GitHub Pages
+
+---
+
+## Featured Projects
+
+### Adaptive System — Reliability Monitoring & Adaptive Recovery Platform
+
+A reliability-focused monitoring platform that ingests telemetry, classifies system health, and applies adaptive recovery policies based on runtime conditions.
+
+**Technologies**
+- Python
+- FastAPI
+- Telemetry Processing
+- Fault Injection Testing
+- REST APIs
+
+---
+
+### Sudoku Masters — Puzzle Generation & Competitive Gameplay Platform
+
+A browser-based Sudoku platform featuring puzzle generation, validation, solving logic, timed gameplay, streak tracking, and leaderboard functionality.
+
+**Technologies**
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+
+---
+
+### VoiceNotes Organizer — AI Audio-to-Notes Pipeline
+
+A full-stack application that transforms spoken audio into structured notes, summaries, action items, and decisions.
+
+**Technologies**
+- React
+- FastAPI
+- Groq SDK
+- Whisper
+- JSON Processing
+
+---
+
+## Local Development
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Riyadpatel24/Portfolio.git
+```
+
+Navigate into the project:
+
+```bash
+cd Portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## Production Build
+
+```bash
+npm run build
+```
+
+Preview production build:
+
+```bash
+npm run preview
+```
+
+---
+
+## Future Improvements
+
+- WorkerGrid integration
+- Dedicated project pages
+- Project architecture diagrams
+- Blog section
+- Technical write-ups
+- Case studies for major projects
+
+---
+
+## Connect With Me
+
+### GitHub
+https://github.com/Riyadpatel24
+
+### LinkedIn
+https://linkedin.com/in/riya-patel-b00ab42bb
+
+### LeetCode
+https://leetcode.com/u/r_24
+
+### Portfolio
+https://riyadpatel24.github.io/Portfolio/
+
+### Email
+rdp2245@gmail.com
+
+---
+
+## License
+
+This project is open for learning and inspiration.
+
+© 2026 Riya Patel
