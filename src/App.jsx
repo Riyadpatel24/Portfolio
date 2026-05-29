@@ -6,37 +6,81 @@ const SKILLS = [
   { cat: 'Languages',      items: ['Python','Java','JavaScript ES6+','HTML & CSS','SQL'] },
   { cat: 'Frameworks',     items: ['React','FastAPI','Spring Boot','uvicorn','Groq SDK','SpeechRecognition','psutil'] },
   { cat: 'DevOps & Cloud', items: ['Docker','Git & GitHub','AWS EC2','AWS S3','AWS RDS','IAM','VPC'] },
-  { cat: 'Concepts',       items: ['Agentic AI','Microservices','REST APIs','Chaos Engineering','TDD','NoSQL','Async & Multithreading','pytest'] },
+  { cat: 'Core CS',        items: ['Data Structures','Algorithms','OOP','DBMS','Operating Systems','Computer Networks'] },
+  { cat: 'Backend',        items: ['FastAPI','REST APIs','PostgreSQL','Docker'] }
 ]
 
 const PROJECTS = [
   {
-    index:'01', name:'VoiceOS — AI Desktop Assistant',
-    sub:'github.com/Riyadpatel24', href:'https://github.com/Riyadpatel24',
-    desc:'Voice-controlled AI assistant with async execution and a 3-tier security sandbox (SAFE / MODERATE / BLOCKED) built with regex guards. Read-only tools run in parallel via ThreadPoolExecutor, state-mutating tools sequentially — keeping UI fully responsive during multi-step AI reasoning. Crash-safe persistent memory via atomic file replacement, 95%+ pytest coverage across 30+ test cases.',
-    stack:['Python','Agentic AI','ThreadPoolExecutor','STT / TTS','pytest','psutil','Exponential Backoff'],
+    index: '01',
+    name: 'Adaptive System — Reliability Monitoring & Adaptive Recovery Platform',
+    sub: 'github.com/Riyadpatel24/adaptive_system',
+    href: 'https://github.com/Riyadpatel24/adaptive_system',
+    desc: 'Built a reliability-focused monitoring platform that ingests telemetry, classifies system health, and applies adaptive recovery policies based on runtime conditions. The platform performs signal normalization, failure-risk analysis, and automated response actions while supporting fault-injection testing through CPU and memory stress simulations.',
+    stack: [
+      'FastAPI',
+      'Python',
+      'Telemetry',
+      'Monitoring',
+      'Fault Injection',
+      'REST APIs'
+    ],
   },
+
   {
-    index:'02', name:'Adaptive System — Autonomous SRE Platform',
-    sub:'github.com/Riyadpatel24/adaptive_system', href:'https://github.com/Riyadpatel24/adaptive_system',
-    desc:'Self-tuning SRE loop: telemetry ingestion → signal normalisation → health classification → LOCKDOWN/THROTTLE actions via safety guard and cooldown manager. Failure prediction from rolling risk histories, root cause analysis via DependencyGraph, PolicyEngine adapting timeout and retry limits based on live failure rates. Chaos engineering via CPU spike & memory leak injection.',
-    stack:['FastAPI','Python','Chaos Engineering','SRE','Microservices','Telemetry'],
+    index: '02',
+    name: 'Sudoku Masters — Puzzle Generation & Competitive Gameplay Platform',
+    sub: 'github.com/Riyadpatel24/sudoku-master',
+    href: 'https://github.com/Riyadpatel24/sudoku-master',
+    desc: 'Developed a browser-based Sudoku platform featuring puzzle generation, validation, solving logic, note-taking support, competitive timed gameplay, daily streak tracking, and leaderboard functionality. Implemented a modular architecture separating game logic, puzzle algorithms, and UI components for maintainability and scalability.',
+    stack: [
+      'React',
+      'TypeScript',
+      'Vite',
+      'Tailwind CSS',
+      'Puzzle Generation',
+      'Algorithm Design'
+    ],
   },
+
   {
-    index:'03', name:'VoiceNotes Organizer — AI Audio-to-Notes Pipeline',
-    sub:'github.com/Riyadpatel24/voicenotes-organizer', href:'https://github.com/Riyadpatel24/voicenotes-organizer',
-    desc:'Full-stack pipeline: audio upload → Groq Whisper Large V3 transcription → LLaMA 3.3 70B structures output into summaries, action items, deadlines, and decisions as JSON. Modular architecture cleanly separates transcription and structuring layers — AI models swappable without changing any downstream logic.',
-    stack:['React','FastAPI','Groq SDK','Whisper Large V3','LLaMA 3.3 70B','JSON'],
+    index: '03',
+    name: 'VoiceNotes Organizer — AI Audio-to-Notes Pipeline',
+    sub: 'github.com/Riyadpatel24/voicenotes-organizer',
+    href: 'https://github.com/Riyadpatel24/voicenotes-organizer',
+    desc: 'Built a full-stack audio processing pipeline that converts spoken input into structured notes, summaries, action items, and decisions. Designed a modular architecture separating transcription and content structuring stages, enabling AI models to be replaced without affecting downstream workflows.',
+    stack: [
+      'React',
+      'FastAPI',
+      'Groq SDK',
+      'Whisper',
+      'JSON Processing',
+      'REST APIs'
+    ],
   },
 ]
-
 const EDUCATION = [
   { year:'2023 — 2027', title:'B.Tech — Computer Science & Engineering', org:'P P Savani University · Surat, Gujarat · DSA · DBMS · OS · Networks · OOP', badge:'Degree', badgeClass:'badge-degree' },
   { year:'Jun 2025', title:'IBM Java Developer Professional Certificate', org:'Coursera / IBM · 11 courses · Spring Boot, Microservices, Docker, REST APIs, Generative AI', badge:'Certified', badgeClass:'badge-cert' },
   { year:'Nov 2025', title:'AWS Academy Graduate — Cloud Foundations', org:'Amazon Web Services · 20 hrs · EC2, S3, RDS, IAM, VPC, Cloud Security', badge:'Certified', badgeClass:'badge-cert' },
 ]
 
-const MARQUEE = ['Python','Agentic AI','FastAPI','React','Docker','AWS','Spring Boot','Chaos Engineering','Microservices','TDD','Groq SDK','LLaMA 3.3','Whisper','Async Programming']
+const MARQUEE = [
+  'Python',
+  'Java',
+  'FastAPI',
+  'React',
+  'PostgreSQL',
+  'Docker',
+  'AWS',
+  'Spring Boot',
+  'System Design',
+  'Distributed Systems',
+  'REST APIs',
+  'Data Structures',
+  'Algorithms',
+  'Async Programming'
+]
 
 const LANGUAGES = [
   {name:'English',lvl:'C1 Professional'},{name:'Hindi',lvl:'Native'},
@@ -312,7 +356,7 @@ export default function App() {
         <div className="hero-grid" />
         <div className="hero-glow" />
         <div className="hero-content">
-          <div className="hero-eyebrow">Software Engineer · AI Systems · Bharuch, India</div>
+          <div className="hero-eyebrow">Software Engineering · Backend Systems · Distributed Systems</div>
           <div className="hero-layout">
             {/* Photo + Name stacked */}
             <div className="hero-identity">
@@ -325,9 +369,9 @@ export default function App() {
             {/* Bio + Buttons */}
             <div className="hero-right">
               <p className="hero-bio">
-                B.Tech CSE student building <strong>agentic AI systems</strong>, self-healing SRE
-                platforms, and full-stack pipelines. Passionate about systems that are intelligent,
-                reliable, and production-ready.
+                B.Tech Computer Science student focused on backend engineering,
+                systems design, and distributed systems. Building reliable software
+                platforms with Python, FastAPI, PostgreSQL, Docker, and modern web technologies.
               </p>
               <div className="hero-actions">
                 <a href="#contact" className="btn-primary" onClick={e=>{e.preventDefault();smoothScroll('contact')}}>Get in touch ↗</a>
@@ -352,7 +396,7 @@ export default function App() {
         <div className="section-label reveal"><span className="section-num">00 /</span><h2 className="section-title">About</h2><div className="section-line"/></div>
         <div className="about-strip reveal">
           <div className="about-block"><p className="about-block-label">Current Status</p><p className="about-block-value">B.Tech CSE</p><p className="about-block-sub">P P Savani University, Surat · 2023–2027. Coursework in DSA, DBMS, OS, Networks, OOP.</p></div>
-          <div className="about-block"><p className="about-block-label">Specialisation</p><p className="about-block-value">AI & Systems</p><p className="about-block-sub">Agentic AI systems, autonomous SRE platforms, full-stack AI pipelines. Production-grade with TDD and 95%+ test coverage.</p></div>
+          <div className="about-block"><p className="about-block-label">Specialisation</p><p className="about-block-value">Backend & Systems Engineering</p><p className="about-block-sub">Backend applications, reliability-focused systems, distributed architectures, and developer tooling using Python, FastAPI, PostgreSQL, Docker, and AWS.</p></div>
           <div className="about-block"><p className="about-block-label">Looking For</p><p className="about-block-value">Internships</p><p className="about-block-sub">Open to software engineering, AI/ML, or backend roles. Available for remote or on-site opportunities across India.</p></div>
         </div>
       </section>
