@@ -388,7 +388,7 @@ export default function App() {
               <div className="hero-actions">
                 <a href="#contact" className="btn-primary" onClick={e=>{e.preventDefault();smoothScroll('contact')}}>Get in touch ↗</a>
                 <a href="https://github.com/Riyadpatel24" target="_blank" rel="noopener noreferrer" className="btn-ghost">View GitHub</a>
-                <a href={`${import.meta.env.BASE_URL}RIYA PATEL.pdf`} target="_blank" rel="noopener noreferrer" className="btn-ghost">View Resume ↗</a>
+                <a href={`${import.meta.env.BASE_URL}RIYA_PATEL.pdf`} target="_blank" rel="noopener noreferrer" className="btn-ghost">View Resume ↗</a>
               </div>
               <span className="hero-scroll">↓ scroll to explore</span>
             </div>
