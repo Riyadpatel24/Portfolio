@@ -88,7 +88,7 @@ const LANGUAGES = [
 ]
 
 const CONTACT_ROWS = [
-  {label:'Email',    val:'rdp2245@gmail.com', href:'mailto:rdp2245.com'},
+  {label:'Email',    val:'rdp2245@gmail.com', href:'mailto:rdp2245@gmail.com'},
   {label:'Phone',    val:'+91 9510177953',          href:'tel:+919510177953'},
   {label:'LinkedIn', val:'riya-patel-b00ab42bb',   href:'https://linkedin.com/in/riya-patel-b00ab42bb', blank:true},
   {label:'GitHub',   val:'Riyadpatel24',            href:'https://github.com/Riyadpatel24', blank:true},
@@ -297,18 +297,30 @@ function ContactForm() {
   const [sent,setSent] = useState(false)
   const handle = e => setF(p=>({...p,[e.target.name]:e.target.value}))
   const submit = e => {
-    e.preventDefault()
-    const sub = encodeURIComponent(`Portfolio enquiry from ${f.name}`)
-    const body = encodeURIComponent(`Name: ${f.name}\nEmail: ${f.email}\n\nMessage:\n${f.message}`)
-    window.location.href = `mailto:rdp2245@gmail.com?subject=${sub}&body=${body}`
-    setSent(true); setTimeout(()=>setSent(false),3000)
-  }
+  e.preventDefault()
+
+  const sub = encodeURIComponent(
+    `Portfolio enquiry from ${f.name}`
+  )
+
+  const body = encodeURIComponent(
+    `Name: ${f.name}\nEmail: ${f.email}\n\nMessage:\n${f.message}`
+  )
+
+  window.open(
+    `https://mail.google.com/mail/?view=cm&fs=1&to=rdp2245@gmail.com&su=${sub}&body=${body}`,
+    '_blank'
+  )
+
+  setSent(true)
+  setTimeout(() => setSent(false), 3000)
+}
   return (
     <form className="contact-form" onSubmit={submit}>
       <input  className="form-input" name="name"    type="text"  placeholder="Your Name"    value={f.name}    onChange={handle} required />
       <input  className="form-input" name="email"   type="email" placeholder="Your Email"   value={f.email}   onChange={handle} required />
       <textarea className="form-input form-textarea" name="message" placeholder="Your Message" value={f.message} onChange={handle} required />
-      <button type="submit" className="btn-primary btn-full">{sent?'Opening mail client…':'Send Message ↗'}</button>
+      <button type="submit" className="btn-primary btn-full">{sent ? 'Opening Gmail…' : 'Send Message ↗'}</button>
     </form>
   )
 }
@@ -397,7 +409,7 @@ export default function App() {
         <div className="about-strip reveal">
           <div className="about-block"><p className="about-block-label">Current Status</p><p className="about-block-value">B.Tech CSE</p><p className="about-block-sub">P P Savani University, Surat · 2023–2027. Coursework in DSA, DBMS, OS, Networks, OOP.</p></div>
           <div className="about-block"><p className="about-block-label">Specialisation</p><p className="about-block-value">Backend & Systems Engineering</p><p className="about-block-sub">Backend applications, reliability-focused systems, distributed architectures, and developer tooling using Python, FastAPI, PostgreSQL, Docker, and AWS.</p></div>
-          <div className="about-block"><p className="about-block-label">Looking For</p><p className="about-block-value">Internships</p><p className="about-block-sub">Open to software engineering, AI/ML, or backend roles. Available for remote or on-site opportunities across India.</p></div>
+          <div className="about-block"><p className="about-block-label">Looking For</p><p className="about-block-value">Internships</p><p className="about-block-sub">Open to software engineering, backend development, and systems engineering roles. Available for remote or on-site opportunities across India.</p></div>
         </div>
       </section>
 
