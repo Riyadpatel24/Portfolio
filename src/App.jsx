@@ -12,7 +12,22 @@ const SKILLS = [
 
 const PROJECTS = [
   {
-    index: '01',
+  index: "01",
+  name: "WorkerGrid — Distributed Task Processing System",
+  sub: "github.com/Riyadpatel24/workergrid",
+  href: "https://github.com/Riyadpatel24/workergrid",
+  desc:"Built a distributed task processing system featuring asynchronous background workers, Redis-backed queues, PostgreSQL persistence, automatic retries, dead letter queues, worker heartbeats, and monitoring APIs. Designed to explore backend reliability, fault tolerance, and scalable task execution.",
+  stack: [
+    "FastAPI",
+    "Redis",
+    "PostgreSQL",
+    "Docker",
+    "SQLAlchemy",
+    "Distributed Systems"
+  ]
+},
+  {
+    index: '02',
     name: 'Adaptive System — Reliability Monitoring & Adaptive Recovery Platform',
     sub: 'github.com/Riyadpatel24/adaptive_system',
     href: 'https://github.com/Riyadpatel24/adaptive_system',
@@ -24,22 +39,6 @@ const PROJECTS = [
       'Monitoring',
       'Fault Injection',
       'REST APIs'
-    ],
-  },
-
-  {
-    index: '02',
-    name: 'Sudoku Masters — Puzzle Generation & Competitive Gameplay Platform',
-    sub: 'github.com/Riyadpatel24/sudoku-master',
-    href: 'https://github.com/Riyadpatel24/sudoku-master',
-    desc: 'Developed a browser-based Sudoku platform featuring puzzle generation, validation, solving logic, note-taking support, competitive timed gameplay, daily streak tracking, and leaderboard functionality. Implemented a modular architecture separating game logic, puzzle algorithms, and UI components for maintainability and scalability.',
-    stack: [
-      'React',
-      'TypeScript',
-      'Vite',
-      'Tailwind CSS',
-      'Puzzle Generation',
-      'Algorithm Design'
     ],
   },
 
@@ -58,6 +57,22 @@ const PROJECTS = [
       'REST APIs'
     ],
   },
+
+  {
+    index: '04',
+    name: 'Sudoku Masters — Puzzle Generation & Competitive Gameplay Platform',
+    sub: 'github.com/Riyadpatel24/sudoku-master',
+    href: 'https://github.com/Riyadpatel24/sudoku-master',
+    desc: 'Developed a browser-based Sudoku platform featuring puzzle generation, validation, solving logic, note-taking support, competitive timed gameplay, daily streak tracking, and leaderboard functionality. Implemented a modular architecture separating game logic, puzzle algorithms, and UI components for maintainability and scalability.',
+    stack: [
+      'React',
+      'TypeScript',
+      'Vite',
+      'Tailwind CSS',
+      'Puzzle Generation',
+      'Algorithm Design'
+    ],
+  },
 ]
 const EDUCATION = [
   { year:'2023 — 2027', title:'B.Tech — Computer Science & Engineering', org:'P P Savani University · Surat, Gujarat · DSA · DBMS · OS · Networks · OOP', badge:'Degree', badgeClass:'badge-degree' },
@@ -73,7 +88,8 @@ const MARQUEE = [
   'PostgreSQL',
   'Docker',
   'AWS',
-  'Spring Boot',
+  'Redis',
+  'Distributed Task Processing',
   'System Design',
   'Distributed Systems',
   'REST APIs',
