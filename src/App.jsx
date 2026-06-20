@@ -73,6 +73,22 @@ const PROJECTS = [
       'Algorithm Design'
     ],
   },
+
+  {
+    index: '05',
+    name: 'DevToolkit — Free Developer Utility Belt',
+    sub: 'github.com/Riyadpatel24/DevToolkit',
+    href: 'https://github.com/Riyadpatel24/DevToolkit',
+    desc: 'Built a production-ready, fully client-side developer utility web app featuring a JSON Formatter & Minifier, Base64 Encoder/Decoder, UUID v4 Generator, and Unix Timestamp Converter. All processing happens in the browser — zero data leaves the client. Designed with a premium dark UI, micro-animations, copy-to-clipboard on every output, and responsive layout.',
+    stack: [
+      'React',
+      'Vite',
+      'Vanilla CSS',
+      'Web Crypto API',
+      'Clipboard API',
+      'Vercel'
+    ],
+  },
 ]
 const EDUCATION = [
   { year:'2023 — 2027', title:'B.Tech — Computer Science & Engineering', org:'P P Savani University · Surat, Gujarat · DSA · DBMS · OS · Networks · OOP', badge:'Degree', badgeClass:'badge-degree' },
